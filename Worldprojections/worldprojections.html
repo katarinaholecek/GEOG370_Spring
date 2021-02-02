@@ -8,11 +8,10 @@
 <body>
     <h1>In this project I learned how to display images in different projections</h1>
     
-    <h2 style="color:red">Describe in your own words how you displayed the map in different projections using QGIS</h2>
-    <p>You can write a paragraph here</p>
+       <p>The first thing I did was download the base map from Nature Earth. Then, after opening it as a vector layer in QGIS I added an indicatrix mapper. Finally, for each projection I used different EPSG codes.</p>
     
     <h2>WGS84 Projection</h2>
-    <h3>Some observations</h3>
+    <h3>As you get further from the equator the shae starts to get distorted.</h3>
     <a href=".//maps/4326.png">
     <img src=".//maps/4326.png" alt="WGS84" width='500px'>
     </a>
@@ -21,9 +20,42 @@
     <a href=".//maps/54043.png">
     <img src=".//maps/54043.png" alt="Aitoff" width='500px'>
     </a>
-    <h2 style="color:red">Now, you should <u>add the following projections on your own:</u></h2>
-    <h3>EPSG: 3857, 53018, 54034, 54027, 102016, and two additional projections that you choose.</h3>
-    <p></p>
+    <h2>Pseudo Mercator Projection</h2>
+    <h3>Although the shape is kept constant, the area is largely thrown off.</h3>
+    <a href=".//maps/3857.png">
+    <img src=".//maps/3857.png" alt="Pseudo Mercator" width='500px'>
+    </a>
+    <h2>Sphere Winkel Projection</h2>
+    <h3>The closer you get to the poles, the more distorted the shape. </h3>
+    <a href=".//maps/53018.png">
+    <img src=".//maps/53018.png" alt="Sphere Winkel" width='500px'>
+    </a>
+    <h2>World Cylindrical Equal Area Projection</h2>
+    <h3>The projections here are more condense but area and shape seem fine until you reach the poles.</h3>
+    <a href=".//maps/54034.png">
+    <img src=".//maps/54034.png" alt="World Cylindrical Equal Area" width='500px'>
+    </a>
+    <h2>World Equidistant Conic Projection</h2>
+    <h3>The area is distorted the closer you get to the North Pole.</h3>
+    <a href=".//maps/54027.png">
+    <img src=".//maps/54027.png" alt="World Equidistant Conic" width='500px'>
+    </a>
+    <h2>North Pole Azimuthal Equidistant Projection</h2>
+    <h3>The area is also distorted the further you get from the North Pole.</h3>
+    <a href=".//maps/102016.png">
+    <img src=".//maps/102016.png" alt="North Pole Azimuthal Equidistant Projection" width='500px'>
+    </a>
+    <h2>Sphere Mollweide Projection</h2>
+    <h3>Area is preserved more than shape.</h3>
+    <a href=".//maps/53009.png">
+    <img src=".//maps/53009.png" alt="Sphere Mollweide" width='500px'>
+    </a>
+    <h2>World Loximuthal Projection</h2>
+    <h3>The South Pole is further distorted than the North Pole.</h3>
+    <a href=".//maps/54023.png">
+    <img src=".//maps/54023.png" alt="World Loximuthal" width='500px'>
+    </a>
+   
     <h2>Data used for this project</h2>
     <a href="https://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/cultural/ne_10m_admin_0_countries.zip"> Download Natrual Earth 1:10m Cultural Vector </a>
 </body>
